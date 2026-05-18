@@ -90,7 +90,8 @@ export function ActivityChart({ chartData }: ActivityChartProps) {
               height={36}
               iconType="circle"
               iconSize={8}
-              wrapperStyle={{ pt: 10, fontSize: "12px" }}
+              // 🔥 CORRECCIÓN DE TIPADO PARA VERCEL: Cambiado 'pt' por 'paddingTop' con formato string de CSS
+              wrapperStyle={{ paddingTop: "10px", fontSize: "12px" }}
             />
 
             {/* Barras para el volumen del gimnasio */}
